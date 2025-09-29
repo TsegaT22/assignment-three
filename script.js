@@ -11,7 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
             /* This prevents duplicates from being created*/
             const alreadyAdded = Array.from(favoritesList.children)
                 .some(li => li.querySelector(".dish-name").textContent === dishName);
-            if (alreadyAdded) return;
+            if (alreadyAdded) {
+                card.classList.remove("favorited");
+                const liToRm = Array.from(favoritesList.children).find(li => li.querySelector(".dish-name").textContent === dishName);
+                if (liToRm) liToRm.remove();
+                return;
+            }
 
             /* Creates list item */
             const li = document.createElement("li");

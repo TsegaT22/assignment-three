@@ -36,7 +36,23 @@ img{
     justify-content: center;
 
 }
-card{
+.img-row{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.img-row img{
+    max-width: 200px;
+    border-radius: 8px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.card{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,4 +98,9 @@ card{
      display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.favorited{
+    border: 3px solid gold;
+    background-color: whitesmoke;
+    transition:all 0.3 ease;
 }
