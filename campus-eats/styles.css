@@ -58,3 +58,28 @@ card{
     text-align: center;
     justify-content: center;
 }
+.favorited{
+    border: 3px solid crimson;
+    background-color: #ff3636;
+}
+#favorites-summary{
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 2px solid #ccc;
+    background: #fafafa;
+}
+
+#favorites-list{
+    list-style-type: none;
+    padding:0;
+}
+#favorites-list li{
+    padding: 10px 15px;  
+    margin-bottom: 12px; 
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
